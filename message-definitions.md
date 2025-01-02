@@ -6,7 +6,7 @@
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 | Heartbeat | 1537, 0b11000000001, 0x601 | 1 | 0 | SRC_DEVICE_ID | - | - | - | - | - | - | - | Sent by every device every HEARTBEAT_MS milliseconds |
 | Conscious Request | 1538, 0b11000000010, 0x602 | 2 | 1 | SRC_DEVICE_ID | DST_DEVICE_ID | - | - | - | - | - | - | Sent by SRC_DEVICE_ID to check if DST_DEVICE_ID is alive |
-| Conscious Response | 1539, 0b11000000011, 0x603 | 1 | 1 | DST_DEVICE_ID | - | - | - | - | - | - | - | Sent by DST_DEVICE_ID to assert it is alive |
+| Conscious Response | 1539, 0b11000000011, 0x603 | 1 | 1 | SRC_DEVICE_ID | - | - | - | - | - | - | - | Sent by SRC_DEVICE_ID to assert it is alive |
 
 
 # Message Id Structure
