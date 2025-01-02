@@ -8,9 +8,9 @@
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 | Measured Throttle Position | 0b00 | 2 | 0 | SRC_DEVICE_ID | Throttle Position | - | - | - | - | - | - | Sent to indicate the measured throttle position |
-| Measured Engine RPM | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
-| Measured Wheel RPM | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
-| Measured Wheel Speed | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured Engine RPM | 0b00 | 5 | 0 | SRC_DEVICE_ID | INT_p1 | INT_p2 | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured Wheel RPM | 0b00 | 2 | 0 | SRC_DEVICE_ID | INT_p1 | INT_p2 | - | - | - | - | - | Sent to indicate the current wheel RPM |
+| Measured Wheel Speed | 0b00 | 2 | 0 | SRC_DEVICE_ID | FLOAT_p1 | FLOAT_p2 | FLOAT_p3 | FLOAT_p4 | - | - | - | Sent to indicate the current engine RPM |
 | Measured GPS Speed | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
 | Measured GPS Latitude | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
 | Measured GPS Longitude | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
