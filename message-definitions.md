@@ -4,9 +4,22 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Throttle Position | 0b00 | 2 | 0 | SRC_DEVICE_ID |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
 | Heartbeat | 1537, 0b11000000001, 0x601 | 1 | 0 | SRC_DEVICE_ID | - | - | - | - | - | - | - | Sent by every device every HEARTBEAT_MS milliseconds |
 | Conscious Request | 1538, 0b11000000010, 0x602 | 2 | 1 | SRC_DEVICE_ID | DST_DEVICE_ID | - | - | - | - | - | - | Sent by SRC_DEVICE_ID to check if DST_DEVICE_ID is alive |
 | Conscious Response | 1539, 0b11000000011, 0x603 | 1 | 1 | SRC_DEVICE_ID | - | - | - | - | - | - | - | Sent by SRC_DEVICE_ID to assert it is alive |
+| Identity | 1540, 0b11000000100 | 2 | 1 | SRC_DEVICE_ID | DST_DEVICE_ID |   |   |   |   |   |   | Sent by SRC_DEVICE_ID to get the identifier of DST_DEVICE_ID |
+| Announce | 1541, 0b11000000101 | 8 | 0 | SRC_DEVICE_ID | CHAR1 | CHAR2 | CHAR3 | CHAR4 | CHAR5 | CHAR6 | CHAR7 | Sent by SRC_DEVICE_ID to annouce its identifier CHAR1-7 |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+
 
 
 # Message Id Structure
