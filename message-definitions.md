@@ -7,7 +7,17 @@
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| Throttle Position | 0b00 | 2 | 0 | SRC_DEVICE_ID |   |   |   |   |   |   |   |   |
+| Measured Throttle Position | 0b00 | 2 | 0 | SRC_DEVICE_ID | Throttle Position | - | - | - | - | - | - | Sent to indicate the measured throttle position |
+| Measured Engine RPM | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured Wheel RPM | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured Wheel Speed | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured GPS Speed | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured GPS Latitude | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured GPS Longitude | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured GPS Altitude | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured GPS Time | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured GPS Date | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured Tyre Data | 0b00 | 7 | 0 | SRC_DEVICE_ID | TYRE_INDEX | TYRE_DATA_TYPE | FLOAT_p1 | FLOAT_p2 | FLOAT_p3 | FLOAT_p4 | - | Sent to indicate current tyre data. TYRE_INDEX and TYRE_DATA_TYPE indicate which tyre and temp/pressure |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 | Heartbeat | 1537, 0b11000000001, 0x601 | 1 | 0 | SRC_DEVICE_ID | - | - | - | - | - | - | - | Sent by every device every HEARTBEAT_MS milliseconds |
 | Conscious Request | 1538, 0b11000000010, 0x602 | 2 | 1 | SRC_DEVICE_ID | DST_DEVICE_ID | - | - | - | - | - | - | Sent by SRC_DEVICE_ID to check if DST_DEVICE_ID is alive |
