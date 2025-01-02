@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| Heartbeat | 1537, 0b11000000001, 0x601 |   |   |   |   |   |   |   |   |   |   |   |
+| Heartbeat | 1537, 0b11000000001, 0x601 | 1 | 0 | DEVICE_ID | - | - | - | - | - | - | - | Sent by every device every HEARTBEAT_MS milliseconds |
 
 
 # Message Id Prefixes
