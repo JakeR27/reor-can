@@ -5,16 +5,17 @@
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Input Gear Shift | 0b00 | 2 | 0 | SRC_DEVICE_ID | DIRECTION |   |   |   |   |   |   | Sent to indicate a desire to shift gears. DIRECTION is a signed short (-2 DOWN to N, -1 DOWN, 1 UP, 2 UP to N) |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |
 | Measured Throttle Position | 0b00 | 2 | 0 | SRC_DEVICE_ID | Throttle Position | - | - | - | - | - | - | Sent to indicate the measured throttle position |
-| Measured Engine RPM | 0b00 | 5 | 0 | SRC_DEVICE_ID | INT_p1 | INT_p2 | - | - | - | - | - | Sent to indicate the current engine RPM |
-| Measured Wheel RPM | 0b00 | 2 | 0 | SRC_DEVICE_ID | INT_p1 | INT_p2 | - | - | - | - | - | Sent to indicate the current wheel RPM |
-| Measured Wheel Speed | 0b00 | 2 | 0 | SRC_DEVICE_ID | FLOAT_p1 | FLOAT_p2 | FLOAT_p3 | FLOAT_p4 | - | - | - | Sent to indicate the current engine RPM |
-| Measured GPS Speed | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
-| Measured GPS Latitude | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
-| Measured GPS Longitude | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
-| Measured GPS Altitude | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Input Transmission Gear | 0b00 | 2 | 0 | SRC_DEVICE_ID | Throttle Position | - | - | - | - | - | - | Sent to indicate the measured throttle position |
+| Measured Engine RPM | 0b00 | 3 | 0 | SRC_DEVICE_ID | INT_p1 | INT_p2 | - | - | - | - | - | Sent to indicate the current engine RPM |
+| Measured Wheel RPM | 0b00 | 3 | 0 | SRC_DEVICE_ID | INT_p1 | INT_p2 | - | - | - | - | - | Sent to indicate the current wheel RPM |
+| Measured Wheel Speed | 0b00 | 5 | 0 | SRC_DEVICE_ID | FLOAT_p1 | FLOAT_p2 | FLOAT_p3 | FLOAT_p4 | - | - | - | Sent to indicate the current wheel speed |
+| Measured GPS Speed | 0b00 | 5 | 0 | SRC_DEVICE_ID | FLOAT_p1 | FLOAT_p2 | FLOAT_p3 | FLOAT_p4 | - | - | - | Sent to indicate the current GPS speed
+| Measured GPS Latitude | 0b00 | 5 | 0 | SRC_DEVICE_ID | FLOAT_p1 | FLOAT_p2 | FLOAT_p3 | FLOAT_p4 | - | - | - | Sent to indicate the current GPS latitude |
+| Measured GPS Longitude | 0b00 | 5 | 0 | SRC_DEVICE_ID | FLOAT_p1 | FLOAT_p2 | FLOAT_p3 | FLOAT_p4 | - | - | - | Sent to indicate the current GPS longitude |
+| Measured GPS Altitude | 0b00 | 5 | 0 | SRC_DEVICE_ID | FLOAT_p1 | FLOAT_p2 | FLOAT_p3 | FLOAT_p4 | - | - | - | Sent to indicate the current GPS altitude |
 | Measured GPS Time | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
 | Measured GPS Date | 0b00 | 2 | 0 | SRC_DEVICE_ID | RPM | - | - | - | - | - | - | Sent to indicate the current engine RPM |
 | Measured Tyre Data | 0b00 | 7 | 0 | SRC_DEVICE_ID | TYRE_INDEX | TYRE_DATA_TYPE | FLOAT_p1 | FLOAT_p2 | FLOAT_p3 | FLOAT_p4 | - | Sent to indicate current tyre data. TYRE_INDEX and TYRE_DATA_TYPE indicate which tyre and temp/pressure |
